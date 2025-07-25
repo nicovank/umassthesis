@@ -5,7 +5,12 @@ proposals in the required form for submission to the UMass Graduate School.
 
 ## Quick Start
 
-Clone the repository and start editing `main.tex`.
+Clone the repository and start editing `main.tex`. Run the following command to
+build the PDF:
+
+```bash
+./latexrun -o main.pdf -Wall main.tex
+```
 
 ## Class Options
 
