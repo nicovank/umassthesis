@@ -6,10 +6,6 @@ in the required form for submission to the University of Massachusetts Graduate 
 To add the required files to your tex environment, run the installer:
 
     ./install.sh
-    
-If you want to use [LyX](http://www.lyx.org/), copy the layout file after installing the class files:
-
-    cp lyx/umassthesis.layout ~/.lyx/layouts/
 
 Once installed, you should be able to work with the example files in `example/`:
 
@@ -18,8 +14,6 @@ Once installed, you should be able to work with the example files in `example/`:
     pdflatex umthsmpl
     bibtex umthsmpl
     pdflatex umthsmpl
-    # Edit with LyX:
-    lyx umthsmpl.lyx
 
 ## Class Options
 **umassthesis** is based on the LaTeX2e report class and accepts all of the options of that class.
