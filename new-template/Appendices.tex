@@ -1,0 +1,66 @@
+%-----------------------------------------------------------------
+% APPENDICES 
+%%If you are only using ONE APPENDIX CHAPTER, replace the active template code in the box with the commented code below.
+%\appendix
+%\chapter*{APPENDIX\\TITLE}
+%\addtocontents{toc}{\hbox to \linewidth{~}}
+%\addcontentsline{toc}{chapter}{APPENDIX: TITLE}
+%-----------------------------------------------------------------
+\addtocontents{toc}{\hbox to \linewidth{~}}
+\addtocontents{toc}{\protect\noindent APPENDICES\par}
+\addtocontents{toc}{\hbox to \linewidth{~}}
+\appendix
+\renewcommand{\chaptername}{APPENDIX}
+\titlecontents{chapter}
+    [0em]        % left margin
+    {\addvspace{0em} \normalfont} % formatting for entry (unbold!)
+    {\hspace{1.5em}\thecontentslabel.\hspace{0.5em}}  % numbered entries: reserve 1em for number
+    {\hspace*{-1em}}     % unnumbered entries: bump back by 1em
+    {\titlerule*[0.4155em]{.}\contentspage} % filler and page number
+%-----------------------------------------------------------------
+\chapter{STRAINS OF WXYZ VIRUS}
+The following strains of WXYZ Virus were used during the course of this study.
+
+\begin{itemize}
+\singlespacing
+    \item WXYZ-a123
+        \begin{itemize}
+            \item Trial A
+            \item Trial C
+            \item Trial E
+        \end{itemize}
+    \item WXYZ-b248
+         \begin{itemize}
+            \item Trial A
+            \item Trial B
+            \item Trial D
+        \end{itemize}
+    \item WXYZ-d987
+        \begin{itemize}
+            \item Trial B
+            \item Trial D
+            \item Trial E
+        \end{itemize}
+\end{itemize}
+
+
+\chapter{INCUBATOR CONDITIONS}
+The following tables report data on the average incubator temperature for our five trials.
+
+\begin{table}[h]
+\centering
+\begin{tabular}{ccc}
+    \toprule
+   Trial & Temperature (\degree C)  \\
+   \midrule
+    A & 27.5  \\
+    B & 27.8  \\
+    C & 27.3 \\
+    D & 27.6 \\
+    E & 27.8 \\
+    \bottomrule
+\end{tabular}
+\caption{\centering Average Incubator Temperature for Different Experiment Trials}
+\end{table}
+
+

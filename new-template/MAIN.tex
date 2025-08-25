@@ -1,0 +1,68 @@
+\documentclass[letterpaper, 12pt]{UMassDissSci}
+%------------------------------------------------------------------------------------
+% FRONT MATTER TEMPLATE INFORMATION
+%------------------------------------------------------------------------------------
+%%ADD BASIC DISSERTATION INFORMATION
+\newcommand{\authname}{Luis Martinez}
+\newcommand{\distitle}{Analysis of Gene ABC}
+\newcommand{\monthyear}{May 2025}					                 	
+\newcommand{\degreename}{Doctorate of Philosophy in Molecular and Cellular Biology}
+\newcommand{\programname}{Graduate Program in Molecular and Cellular Biology}		 
+
+%%ADD YOUR COMMITTEE INFORMATION
+\newcommand{\advisorname}{Barbara McClintock}
+\newcommand{\comone}{Charles Darwin}
+\newcommand{\comtwo}{Gregor Mendel}	
+\newcommand{\headname}{Rosalind Franklin}		
+\newcommand{\deptname}{Biology}	
+
+%ADD YOUR EDUCATIONAL HISTORY
+\newcommand{\undergraddegree}{B.S.}	
+\newcommand{\undergradinstitution}{Example College} 
+\newcommand{\mastersdegree}{M.P.H.}
+\newcommand{\mastersinstitution}{University of Example}
+
+%ADD YOUR DEDICATION (UNDER 350 WORDS)
+\newcommand{\dedfill}{
+To my family.
+}
+
+%ADD YOUR ACKNOWLEDGEMENTS 
+\newcommand{\acknowledgementstfill}{
+I would like to thank my advisor.... 
+}
+
+%ADD YOUR ABSTRACT (UNDER 350 WORDS)
+\newcommand{\abstractfill}{\quad
+The role of Gene ABC in regulating Process X has yet to be well characterized. In this dissertation, we investigated...
+}
+
+\begin{document}
+
+%------------------------------------------------------------------------------------
+% MAIN BODY 
+\input{FrontMatter}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\addtocontents{toc}{\hfill \par}
+\addtocontents{toc}{\protect\noindent CHAPTER\par}
+\doublespacing
+%------------------------------------------------------------------
+
+\input{Chapter1}
+\input{Chapter2}
+\input{Chapter3}
+\input{Appendices}
+
+
+%------------------------------------------------------------------
+% BIBLIOGRAPHY INFORMATION
+\newpage
+\addtocontents{toc}{\hfill \par}
+\addcontentsline{toc}{chapter}{\hspace{1em}\bibname}
+%------------------------------------------------------------------------------------
+
+\bibliographystyle{unsrtnat}   %Can change the style of your bibliography
+\bibliography{References}      %Enter your bib file's name here
+
+\end{document}
