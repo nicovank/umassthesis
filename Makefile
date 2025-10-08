@@ -1,6 +1,6 @@
 .PHONY: all
 all:
-	./latexrun -o main.pdf -Wall --latex-cmd=xelatex MAIN.tex
+	./latexrun -o main.pdf -Wall MAIN.tex
 
 .PHONY: clean
 clean:
